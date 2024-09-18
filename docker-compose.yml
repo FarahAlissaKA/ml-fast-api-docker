@@ -1,0 +1,20 @@
+services:
+  frontend:
+    build: frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/RestAPI
+    restart: always
+    container_name: frontend
+
+  backend:
+    build: backend
+    ports: 
+      - "8000:8000"
+    volumes:
+      - ./backend:/RestAPI
+    restart: always
+    container_name: backend
