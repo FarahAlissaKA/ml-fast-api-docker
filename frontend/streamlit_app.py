@@ -39,9 +39,9 @@ st.write('**Features**', display)
 # Prepare the input data to send to the FastAPI backend as JSON
 input_data = {
     "Gender": gender_value,
-    "Age": float(age),
-    "Height": float(height),
-    "Heart_Rate": float(heart_rate),
+    "Age": int(age),
+    "Height": int(height),
+    "Heart_Rate": int(heart_rate),
     "Body_Temp": float(body_temp)
 }
 
