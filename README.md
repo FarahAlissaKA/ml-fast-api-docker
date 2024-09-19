@@ -35,7 +35,7 @@ This project involves deploying a machine learning model using FastAPI and Docke
    cd ml-fast-api-docker
    ```
 
-2. **After Starting the Docker Engine, Build and Run with Docker Compose:**
+2. **Build and Run with Docker Compose:**
    Ensure Docker Engine is running on your machine.
    ```bash
    docker-compose up --build
