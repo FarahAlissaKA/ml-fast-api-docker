@@ -13,7 +13,7 @@ model_path = os.path.join(current_dir, 'model.joblib')
 model = joblib.load(model_path)
 
 # Initialize the FastAPI app with metadata (title, description, version)
-app = FastAPI(title="Calories ML API", description="API for calories dataset ml model", version="1.0")
+app = FastAPI(title="Calories ML API", description="Gender (0-Male, 1-Female), \nAge in years, \nHeight in cm, \nHeart Rate in bpm, \nBody Temperature in °C", version="1.0")
 
 # Define the structure of incoming request data using Pydantic BaseModel
 class CaloriesDataRequest(BaseModel):
@@ -22,18 +22,6 @@ class CaloriesDataRequest(BaseModel):
     Height: float = Field(..., description="Height in cm")
     Heart_Rate: float = Field(..., description="Heart Rate in bpm")
     Body_Temp: float = Field(..., description="Body Temperature in °C")
-
-	# Example request data provided for documentation purposes
-    class Config:
-        schema_extra = {
-            "example": {
-                "Gender": 0, # Example: Male
-                "Age": 25, # Example: 25 years old
-                "Height": 175, # Example: 175 cm height
-                "Heart_Rate": 70, # Example: 70 bpm heart rate
-                "Body_Temp": 36.6 # Example: 36.6°C body temperature
-            }
-        }
 
 # Define a root route (GET request) for testing the API
 @app.get("/", tags=['Welcome'])
