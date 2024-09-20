@@ -48,7 +48,7 @@ This project involves deploying a machine learning model using FastAPI and Docke
 ## Usage Instructions
 
 1. **Using the API:**
-   - Send POST requests to `http://localhost:8000/predict/` with a JSON payload containing features: `gender`, `age`, `height`, `heart_rate`, and `body_temp`.
+   - Open `http://localhost:8000/docs`to send POST requests with a JSON payload containing features: `gender`, `age`, `height`, `heart_rate`, and `body_temp`.
 
 2. **Using the Frontend:**
    - Open `http://localhost:8501` in browser to interact with the Streamlit application and get calorie burn predictions.
