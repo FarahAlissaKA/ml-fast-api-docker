@@ -32,11 +32,11 @@ This project involves deploying a machine learning model using FastAPI and Docke
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/FarahAlissaKA/ml-fast-api-docker.git
-   cd ml-fast-api-docker
    ```
 
 2. **Build and Run with Docker Compose:**
-   Ensure Docker Engine is running on your machine.
+   - Ensure Docker Engine is running on your machine.
+   - Navigate your terminal to the folder containing cloned repository.
    ```bash
    docker-compose up --build
    ```
