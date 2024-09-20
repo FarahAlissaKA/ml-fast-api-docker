@@ -31,7 +31,7 @@ This project involves deploying a machine learning model using FastAPI and Docke
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/docker/welcome-to-docker.git
+   git clone https://github.com/FarahAlissaKA/ml-fast-api-docker.git
    cd ml-fast-api-docker
    ```
 
